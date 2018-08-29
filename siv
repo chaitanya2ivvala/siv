@@ -104,6 +104,7 @@ then
 echo "terminating program :-("
 exit
 fi
+fi
 if [ ! -f "$5" ];
 then
 echo "verification file dose not exist"
@@ -257,7 +258,7 @@ echo "no of directories prased: $dcount"
 echo "verification mode compleated :-)"
 echo $3,$5,$fcount,$dcount,$nf,$df,$nd,$dd,$end,$change,$start,$runtime  >> $7
 fi
-fi
+
 elif [ "$1" = "-h" ];
 then
         echo "********** help mode ***********"
@@ -280,3 +281,4 @@ echo "invalid command :-("
 echo "use the command siv -h for more info :-) "
 exit
 fi
+
